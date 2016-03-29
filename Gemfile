@@ -1,4 +1,5 @@
-source 'http://rubygems.com'
+source "https://rubygems.org"
 
-gem 'wdm' # For Microsoft windows user, Jekyll recomended use thi gem.
-gem 'github-pages'
+gem 'jekyll', '2.5.3'
+gem 'jekyll-sitemap'
+gem 'octopress', '~> 3.0'
