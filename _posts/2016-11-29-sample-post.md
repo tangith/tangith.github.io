@@ -1,114 +1,94 @@
 ---
 layout: post
-title: 简单布局
-description: "几乎包含了你需要的所有的主题：标题、段落、引用、表、代码块等等。"
-modified: 2016-11-29
-tags: [简单布局]
-image:
-  feature: abstract-12.jpg
-  credit: thisang
-  creditlink: https://thisangblog.wordpress.com/
+title: "一篇包含图片的文章"
+description: "在文章中显示图片的例子和代码。"
+tags: [sample post, images, test, 图片]
 ---
 
-下面是所有你需要的主题风格。检查源代码去查看更多嵌入到段落里的元素。
+下面是一些一篇文章中包含图片的例子。如果你想用带各种类的`figure`标签响应式的并列显示两或三张图片。每个`figure`自动编号并且展示在标题。
 
-# 一级标题
+## Figures (for images or video)
 
-## 二级标题
+### One Up
 
-### 三级标题
+<figure>
+	<a href="http://farm9.staticflickr.com/8426/7758832526_cc8f681e48_b.jpg"><img src="http://farm9.staticflickr.com/8426/7758832526_cc8f681e48_c.jpg" alt=""></a>
+	<figcaption><a href="http://www.flickr.com/photos/80901381@N04/7758832526/" title="Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr">Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr</a>.</figcaption>
+</figure>
 
-#### 四级标题
+### Two Up
 
-##### 五级标题
+应用`.href`类并排显示两张图片，它们的标题是一样的。
 
-###### 六级标题
+```html
+<figure class="half">
+	<img src="/images/image-filename-1.jpg" alt="">
+	<img src="/images/image-filename-2.jpg" alt="">
+	<figcaption>Caption describing these two images.</figcaption>
+</figure>
+```
 
-### 正文
+你会得到下面这样的效果：
 
-Lorem ipsum dolor sit amet, test link adipiscing elit. **This is strong**. Nullam dignissim convallis est. Quisque aliquam.**加粗文字**
+<figure class="half">
+	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
+	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
+	<img src="http://placehold.it/600x300.jpg" alt="">
+	<img src="http://placehold.it/600x300.jpg" alt="">
+	<figcaption>Two images.</figcaption>
+</figure>
 
-这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字
+### Three Up
 
-![Smithsonian Image]({{ site.url }}/images/3953273590_704e3899d5_m.jpg)
-{: .image-right}
-
-*强调*. Donec faucibus. Nunc iaculis suscipit dui. 53 = 125. Water is H<sub>2</sub>O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. The New York Times <cite>cite标签，用来放地址</cite>. <u>下划线</u>. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
-
-HTML and <abbr title="cascading stylesheets">CSS<abbr> are our tools. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.
-
-### 引用
-
-> Lorem ipsum dolor sit amet, test link adipiscing elit. Nullam dignissim convallis est. Quisque aliquam.这是引用段落。
-
-## 列表样式
-
-### 有序列表
-
-1. 项目一
-   1. 子项目一
-   2. 子项目二
-   3. 子项目三
-2. 项目二
-
-### 无序列表
-
-* 项目一
-* 项目二
-* 项目三
-
-## 表格
-
-| 表头一 | 表头二 | 表头三 |
-|:--------|:-------:|--------:|
-| 格1   | 格2   | 格3   |
-| 格4   | 格5   | 格6   |
-|----
-| cell1   | cell2   | cell3   |
-| cell4   | cell5   | cell6   |
-|=====
-| 表尾一   | 表尾二   | 表尾三
-{: rules="groups"}
-
-## 代码段
-
-通过 Pygments 语法高亮显示
-
-以下css代码是用 `{% highlight css %}`和 `{% endhighlight %}`包起来的。
-
-{% highlight css %}
-#container {
-  float: left;
-  margin: 0 -240px 0 0;
-  width: 100%;
-}
-{% endhighlight %}
-
-{% highlight js %}
-var thisang = {
-	name:thisang,
-	sex:male,
-	age:22;
-}
-{% endhighlight %}
-
-无 Pygments 高亮的代码示例
-
-    <div id="awesome">
-        <p>This is great isn't it?</p>
-    </div>
-
-## 按钮
-
-应用 `.btn`类,让按钮有更多样式。
+应用`.third`类并排显示三张图片，它们的标题是一样的。
 
 
-{% highlight html %}
-<a href="#" class="btn btn-success">Success Button</a>
-{% endhighlight %}
+```html
+<figure class="third">
+	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
+	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
+	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
+	<figcaption>Caption describing these three images.</figcaption>
+</figure>
+```
 
-<div markdown="0"><a href="#" class="btn">Primary Button</a></div>
-<div markdown="0"><a href="#" class="btn btn-success">Success Button</a></div>
-<div markdown="0"><a href="#" class="btn btn-warning">Warning Button</a></div>
-<div markdown="0"><a href="#" class="btn btn-danger">Danger Button</a></div>
-<div markdown="0"><a href="#" class="btn btn-info">Info Button</a></div>
+你会得到下面的效果：
+
+<figure class="third">
+	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
+	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
+	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
+	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
+	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
+	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
+	<figcaption>Three images.</figcaption>
+</figure>
+
+### Alternative way 供选择的方式
+
+另外一种实现相同效果的方式是引入`gallery`瀑布流模板。用这种方式，你不需要写任何 HTML 标签，只需要复制一小块代码，调整参数（见下文），用任意数量的图片链接填充内容块。相对路径和绝路径可以混合使用。
+
+下面是你可能会使用到的代码块：
+
+```liquid
+{% raw %}{% capture images %}
+	/images/abstract-10.jpg
+	/images/abstract-11.jpg
+	http://upload.wikimedia.org/wikipedia/en/2/24/Lenna.png
+{% endcapture %}
+{% include gallery images=images caption="Test images" cols=3 %}{% endraw %}
+```
+
+参数：
+
+- `caption`: 设置在 gallery 下方的标题（见上方`figcaption`HTML 标签）;
+- `cols`: 设置瀑布流的列数。可用的值为: [1..3]。
+
+下面是效果：
+
+{% capture images %}
+	/images/abstract-10.jpg
+	/images/abstract-11.jpg
+	http://upload.wikimedia.org/wikipedia/en/2/24/Lenna.png
+{% endcapture %}
+{% include gallery images=images caption="Test images" cols=3 %}
