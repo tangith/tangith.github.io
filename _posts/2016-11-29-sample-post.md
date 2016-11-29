@@ -74,7 +74,7 @@ HTML and <abbr title="cascading stylesheets">CSS<abbr> are our tools. Mauris a a
 
 通过 Pygments 语法高亮显示
 
-以下css代码是用`{% highlight css %}`和`{% endhighlight %}`包起来的。
+以下css代码是用 `{% highlight css %}`和 `{% endhighlight %}`包起来的。
 
 {% highlight css %}
 #container {
@@ -100,7 +100,7 @@ var thisang = {
 
 ## 按钮
 
-应用`.btn`类,让按钮有更多样式。
+应用 `.btn`类,让按钮有更多样式。
 
 
 {% highlight html %}
