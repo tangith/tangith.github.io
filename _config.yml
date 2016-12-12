@@ -1,5 +1,5 @@
-title:            Site Title
-description:      Describe your website here.
+title:            thisang
+description:      重要的东西用眼睛是看不见的。
 disqus_shortname: 
 reading_time:     true
 words_per_minute: 200
@@ -9,19 +9,20 @@ url:
 
 # Owner/author information
 owner:
-  name:           Your Name
+  name:           thisang
   avatar:         avatar.jpg
   bio:            "Your bio goes here. It shouldn't be super long but a good sentence or two should suffice."
-  email:          you@email.com
+  email:          thisang@foxmail.com
   # Social networking links used in footer. Update and remove as you like.
+  wechat:T837930984
   twitter:        
   facebook:       
-  github:         
+  github:thisang         
   stackexchange:  
   linkedin:       
   instagram:      
   flickr:         
-  tumblr:         
+  tumblr:
   # google plus id, include the '+', eg +mmistakes
   google_plus:
 
