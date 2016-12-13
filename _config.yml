@@ -39,6 +39,9 @@ bing_verify:
 # timezone:    America/New_York
 # 默认值为操作系统的时区
 timezone: nil
+  
+# 官方的方法指定摘要的分隔符：
+excerpt_separator: '<!-- more -->'
 
 future:      false  # publish future dated posts --  true, false (default) 
 highlighter: rouge
@@ -91,6 +94,3 @@ exclude:
   - package.json
   - spec
   - tmp
-  
-  # 官方的方法指定摘要的分隔符：
-  excerpt_separator:  '<!-- more -->'
