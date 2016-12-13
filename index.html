@@ -33,11 +33,9 @@ image:
       <h1 class="entry-title"><a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}" itemprop="url">{{ post.title }}</a></h1>
     {% endif %}
   </header>
-  <!-- <div class="entry-content">
-        {{ post.content }}
-  </div> -->
   <!-- 把原来的页面主体内容换成摘要了 -->
   <div class="entry-content">
+    <!-- {{ post.content }} -->
     {{ post.excerpt | strip_html }}
   </div><!-- /.entry-content -->
 </article><!-- /.hentry -->
