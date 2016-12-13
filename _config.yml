@@ -91,3 +91,6 @@ exclude:
   - package.json
   - spec
   - tmp
+  
+  # 官方的方法指定摘要的分隔符：
+  excerpt_separator:  '<!-- more -->'
