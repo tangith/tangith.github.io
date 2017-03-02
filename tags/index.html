@@ -26,3 +26,15 @@ comments: true
 		</ul>
 	</article><!-- /.hentry -->
 {% endunless %}{% endfor %}
+
+
+
+<!-- 多说评论框 start -->
+{% if site.duoshuo_shortname %}
+	{% if page.comments %}
+		<article>
+			<div class="ds-thread" data-thread-key="02" data-title="tag archive" data-url="https://tangith.github.io/tags/"></div>
+		</article>
+	{% endif %}
+{% endif %}
+<!-- 多说评论框 end -->

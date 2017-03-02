@@ -30,8 +30,13 @@ comments: true
         {% endif %}
     {% endif %}
 {% endfor %}
+
 <!-- 多说评论框 start -->
-<article>
-	<div class="ds-thread" data-thread-key="01" data-title="all post" data-url="https://tangith.github.io/posts/"></div>
-</article>
+{% if site.duoshuo_shortname %}
+	{% if page.comments %}
+		<article>
+			<div class="ds-thread" data-thread-key="01" data-title="all post" data-url="https://tangith.github.io/posts/"></div>
+		</article>
+	{% endif %}
+{% endif %}
 <!-- 多说评论框 end -->
