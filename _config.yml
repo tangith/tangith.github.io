@@ -41,7 +41,7 @@ bing_verify:
 timezone: nil
   
 # 官方的方法指定摘要的分隔符：
-excerpt_separator: '<!-- more -->'
+# excerpt_separator: '<!-- more -->'
 
 future:      false  # publish future dated posts --  true, false (default) 
 highlighter: rouge
